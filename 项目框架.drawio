@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-01T12:32:30.419Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="19UNyfSFiiz60XdJElOe" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-01T12:33:16.127Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="8nW1x8eFlUglE6RpVkS8" version="24.3.1" type="github">
   <diagram name="第 1 页" id="t31V32Dkpstlcu7plj35">
-    <mxGraphModel dx="3383" dy="1743" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5457" dy="3157" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -318,6 +318,9 @@
         </UserObject>
         <mxCell id="7gLIGvjIZZUGJrLzzrXZ-36" value="先调用GenInstance，得到app返回值，app也是&lt;span style=&quot;color: rgb(229, 192, 123); background-color: rgb(40, 44, 52); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; white-space-collapse: preserve;&quot;&gt;MprpcApplication类，所以可以再次调用.GenConfig（）.Load&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-830.3" y="2846" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7gLIGvjIZZUGJrLzzrXZ-37" value="callee本地的login方法通过 proto这个" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="951" width="213" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
