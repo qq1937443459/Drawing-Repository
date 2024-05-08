@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-08T10:03:47.143Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="WDk07TdSzkRpDxF-1NrM" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-08T10:04:32.501Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="KIyiF3VO3zvpoBM8s2HL" version="24.3.1" type="github">
   <diagram name="第 1 页" id="bqNeuGsDtK-AdpTKibk5">
     <mxGraphModel dx="1671" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
@@ -174,8 +174,8 @@
         <mxCell id="P3DfzzlQjAu3V2q0BsZn-41" value="加线性层输出类别" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1180" y="500" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P3DfzzlQjAu3V2q0BsZn-43" value="阶段性测试一：单纯radar原图经过encoder+线性层输出能有一定的准确率吗，loss是否能降" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
-          <mxGeometry x="885" y="750" width="510" height="30" as="geometry" />
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-43" value="阶段性测试一：单纯radar原图经过encoder+线性层输出能有一定的准确率吗，loss是否能降✔" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="880" y="750" width="520" height="30" as="geometry" />
         </mxCell>
         <mxCell id="P3DfzzlQjAu3V2q0BsZn-46" value="阶段性测试一" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
           <mxGeometry x="1180" y="530" width="100" height="30" as="geometry" />
@@ -214,6 +214,9 @@
         </mxCell>
         <mxCell id="P3DfzzlQjAu3V2q0BsZn-59" value="如果收敛，说明有效，则导入部分的训练权重，然后将提取的有效特征再作为k和v值送到cross-attention" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
           <mxGeometry x="1665" y="328" width="570" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-61" value="添加的分类头有效，保存分类头权重做后续的内容" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1440" y="735" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
