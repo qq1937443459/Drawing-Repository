@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-08T08:13:03.342Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="5TgIWd1fPmezL5NIyi7d" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-08T08:48:31.471Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="4J0LdKNtHpEagLx5ooWp" version="24.3.1" type="github">
   <diagram name="第 1 页" id="bqNeuGsDtK-AdpTKibk5">
-    <mxGraphModel dx="1420" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1671" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -40,7 +40,12 @@
         <mxCell id="P3DfzzlQjAu3V2q0BsZn-8" value="32*14*768" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1090" y="190" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P3DfzzlQjAu3V2q0BsZn-10" value="self-attention" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="P3DfzzlQjAu3V2q0BsZn-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1650" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-10" value="self-attention" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="1360" y="220" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="P3DfzzlQjAu3V2q0BsZn-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
@@ -168,6 +173,47 @@
         </mxCell>
         <mxCell id="P3DfzzlQjAu3V2q0BsZn-41" value="加线性层输出类别" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1180" y="500" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-43" value="阶段性测试一：单纯radar原图经过encoder+线性层输出能有一定的准确率吗，loss是否能降" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="885" y="750" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-46" value="阶段性测试一" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="530" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-47" value="目前构建好了，但是输出的结果loss很大，暂时不知道训练后能否收敛，收敛就说明融合有效" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1470" y="474" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-48" value="载入了预训练权重" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="538" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-49" value="问题一：直接从两层CNN里面出来的特征就作为kv值，貌似效果不太好" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1265" y="308" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-51" value="等会儿加点self-attention&lt;div&gt;再加个前馈神经网络&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1405" y="183" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1770" y="249.58" as="targetPoint" />
+            <mxPoint x="1720" y="249.58" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="P3DfzzlQjAu3V2q0BsZn-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1940" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-55" value="输出类别试试有没有收敛" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="223" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-56" value="线性层" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="220" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-57" value="分类头" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1770" y="220" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="P3DfzzlQjAu3V2q0BsZn-59" value="如果收敛，说明有效，则导入部分的训练权重，然后将提取的有效特征再作为k和v值送到cross-attention" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1665" y="328" width="570" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
