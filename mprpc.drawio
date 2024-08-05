@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="24.7.5">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="1063" dy="2207" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1704" dy="2856" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -74,25 +74,159 @@
           <mxGeometry x="604" y="-400" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="RKI_oxmCUPOYZ7H7hOv1-96" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;UserServiceRpc&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="766" y="-462" width="160" height="144" as="geometry" />
+          <mxGeometry x="801" y="-648" width="160" height="298" as="geometry" />
         </mxCell>
         <mxCell id="RKI_oxmCUPOYZ7H7hOv1-104" value="&lt;div style=&quot;color: #abb2bf;background-color: #282c34;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Login&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;(::&lt;/span&gt;&lt;span style=&quot;color: #d19a66;&quot;&gt;PROTOBUF_NAMESPACE_ID&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;RpcController&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;controller&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; ::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;fixbug&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;LoginRequest&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;request&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;fixbug&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;LoginResponse&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;response&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;google&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;protobuf&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;Closure&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;done&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-96">
           <mxGeometry y="26" width="160" height="110" as="geometry" />
         </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-107" value="&lt;div style=&quot;color: #abb2bf;background-color: #282c34;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;virtual&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Register&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;(::&lt;/span&gt;&lt;span style=&quot;color: #d19a66;&quot;&gt;PROTOBUF_NAMESPACE_ID&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;RpcController&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;controller&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; ::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;fixbug&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;RegisterRequest&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;request&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;fixbug&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;RegisterResponse&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;response&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;google&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;protobuf&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;Closure&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;done&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-96">
+          <mxGeometry y="136" width="160" height="110" as="geometry" />
+        </mxCell>
         <mxCell id="RKI_oxmCUPOYZ7H7hOv1-98" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-96">
-          <mxGeometry y="136" width="160" height="8" as="geometry" />
+          <mxGeometry y="246" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-100" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;UserServiceRpc_Stub&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="765" y="-197" width="160" height="86" as="geometry" />
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-106" value="&lt;div style=&quot;color: #abb2bf;background-color: #282c34;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;static&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; ::&lt;/span&gt;&lt;span style=&quot;color: #d19a66;&quot;&gt;PROTOBUF_NAMESPACE_ID&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;ServiceDescriptor&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;descriptor&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;();&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-96">
+          <mxGeometry y="254" width="160" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-101" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-100">
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-100" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;UserServiceRpc_Stub&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="803" y="-315" width="160" height="342" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-111" value="&lt;div style=&quot;color: #abb2bf;background-color: #282c34;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;UserServiceRpc_Stub&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #e06c75;&quot;&gt;::PROTOBUF_NAMESPACE_&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;ID::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;RpcChannel&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;channel&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-100">
+          <mxGeometry y="34" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-108" value="&lt;div style=&quot;color: #abb2bf;background-color: #282c34;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Login&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;(::PROTOBUF_NAMESPACE_ID::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;RpcController&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;controller&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; ::fixbug::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;LoginRequest&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;request&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;::fixbug::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;LoginResponse&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;response&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;::google::protobuf::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;Closure&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;done&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-100">
+          <mxGeometry y="78" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-109" value="&lt;div style=&quot;color: #abb2bf;background-color: #282c34;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;void&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Register&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;(::&lt;/span&gt;&lt;span style=&quot;color: #e06c75;&quot;&gt;PROTOBUF_NAMESPACE_ID&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;RpcController&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;controller&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;const&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; ::fixbug::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;RegisterRequest&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;request&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;::fixbug::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;RegisterResponse&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;response&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;::google::protobuf::&lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;Closure&lt;/span&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;done&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;);&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-100">
+          <mxGeometry y="188" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-110" value="&lt;div style=&quot;color: #abb2bf;background-color: #282c34;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #e06c75;&quot;&gt;::PROTOBUF_NAMESPACE_&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;ID::RpcChannel&lt;/span&gt;&lt;span style=&quot;color: #56b6c2;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; channel_;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-100">
+          <mxGeometry y="298" width="160" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-121" value="RpcChannel" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="-284" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-122" value="CallMethod()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-121">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-102" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-100">
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-127" value="class MprpcApplication" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="593.5" y="820" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-128" value="负责初始化" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-127">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-129" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-127">
           <mxGeometry y="52" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-103" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-100">
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-130" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-127">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-131" value="class RpcProvider" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="951" width="383" height="136" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-132" value="void NotifyServie()" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-131">
+          <mxGeometry y="26" width="383" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-133" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-131">
+          <mxGeometry y="52" width="383" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-134" value="void Run()网络功能，利用muduo库实现" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-131">
+          <mxGeometry y="60" width="383" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-155" value="&lt;div&gt;std::unordered_map&amp;lt;std::string,ServiceInfo&amp;gt; m_serviceMap;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-131">
+          <mxGeometry y="86" width="383" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-139" value="callee" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="775" y="838" width="267" height="236" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-173" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RKI_oxmCUPOYZ7H7hOv1-139" source="RKI_oxmCUPOYZ7H7hOv1-145">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="473.4174451326071" y="51" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-145" value="class UserService(){}" style="html=1;whiteSpace=wrap;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-139">
+          <mxGeometry y="26" width="267" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-140" value="MprpcApplication" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-139">
+          <mxGeometry y="76" width="267" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-141" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-139">
+          <mxGeometry y="102" width="267" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-174" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RKI_oxmCUPOYZ7H7hOv1-139" source="RKI_oxmCUPOYZ7H7hOv1-142">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="463.0524787902832" y="123.00000000000045" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-142" value="RpcProvider provicer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-139">
+          <mxGeometry y="110" width="267" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-144" value="provider.NotifyService(new UserService())" style="html=1;whiteSpace=wrap;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-139">
+          <mxGeometry y="136" width="267" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-172" value="provider.run()" style="html=1;whiteSpace=wrap;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-139">
+          <mxGeometry y="186" width="267" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-146" value="caller" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="844" width="208" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-147" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-146">
+          <mxGeometry y="26" width="208" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-148" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-146">
+          <mxGeometry y="52" width="208" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-149" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-146">
+          <mxGeometry y="60" width="208" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-150" value="mprpcconfig" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="86" y="-88" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-151" value="获取ip和端口的参数配置" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-150">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-152" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-150">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-153" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-150">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-157" value="绑定ip和端口，然后监听,开启EventLoop" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1875" y="999" width="378" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="RKI_oxmCUPOYZ7H7hOv1-134" target="RKI_oxmCUPOYZ7H7hOv1-157">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-165" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1250" y="696" width="152" height="213" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-161" value="" style="group" vertex="1" connectable="0" parent="RKI_oxmCUPOYZ7H7hOv1-165">
+          <mxGeometry x="1" y="1" width="151" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-159" value="class UserService(){}" style="html=1;whiteSpace=wrap;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-161">
+          <mxGeometry width="151" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-160" value="func()本地方法" style="html=1;whiteSpace=wrap;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-161">
+          <mxGeometry y="50" width="151" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-162" value="重写protobuf中的login()" style="html=1;whiteSpace=wrap;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-161">
+          <mxGeometry y="100" width="151" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-164" value="1.获取参数&lt;div&gt;2.执行本地方法&lt;/div&gt;&lt;div&gt;3.返回值填给Response&lt;/div&gt;&lt;div&gt;4.回调&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="RKI_oxmCUPOYZ7H7hOv1-165">
+          <mxGeometry x="1" y="151" width="151" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-170" value="实例化这个对象，就是把我们的本地方法注册到rpc服务上&lt;div&gt;所以NotifySewrvice方法是需要生成一张表，记录了服务对象和服务方法（Login）&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="411" y="1019" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-169" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RKI_oxmCUPOYZ7H7hOv1-144" target="RKI_oxmCUPOYZ7H7hOv1-170">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="908.5" y="1064.0459321674548" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RKI_oxmCUPOYZ7H7hOv1-171" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.51;entryY=0.97;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="RKI_oxmCUPOYZ7H7hOv1-140" target="RKI_oxmCUPOYZ7H7hOv1-130">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1131.427811332371" y="873.1922063412876" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
