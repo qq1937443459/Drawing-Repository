@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="24.7.6">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="529" dy="767" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1102" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -151,11 +151,23 @@
         <mxCell id="_VawQS5tZA4y5lR53ruD-61" value="不能一直阻塞在这，因为其他线程还是得来消费的" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="710" y="1413" width="290" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_VawQS5tZA4y5lR53ruD-62" value="用于获取实际的任务，然后让任务队列-1，然后task&amp;nbsp; run起来，并通知别的线程可以来取" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="_VawQS5tZA4y5lR53ruD-62" value="有这么一堆线程，在盯着，然后，从这里获取实际的任务，然后让任务队列-1，然后task&amp;nbsp; run起来，并通知别的线程可以来取" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="731" y="1490" width="339" height="50" as="geometry" />
         </mxCell>
         <mxCell id="_VawQS5tZA4y5lR53ruD-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_VawQS5tZA4y5lR53ruD-57" target="_VawQS5tZA4y5lR53ruD-62">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-65" value="如果想要获得线程的结果，如何设计submittask的返回类型" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="1363" width="410" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-67" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="688" y="1310" width="20" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-68" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1120" y="1390" as="sourcePoint" />
+            <mxPoint x="1170" y="1390" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
