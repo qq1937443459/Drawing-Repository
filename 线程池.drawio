@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="24.7.6">
   <diagram name="Page-1" id="c4acf3e9-155e-7222-9cf6-157b1a14988f">
-    <mxGraphModel dx="1102" dy="675" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="679" dy="474" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -168,6 +168,44 @@
             <mxPoint x="1120" y="1390" as="sourcePoint" />
             <mxPoint x="1170" y="1390" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-69" value="Any类" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1750" y="1357" width="160" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-70" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="_VawQS5tZA4y5lR53ruD-69">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-71" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="_VawQS5tZA4y5lR53ruD-69">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-72" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="_VawQS5tZA4y5lR53ruD-69">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.97;entryY=0.519;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_VawQS5tZA4y5lR53ruD-74" target="_VawQS5tZA4y5lR53ruD-81">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2290" y="1370" />
+              <mxPoint x="2290" y="1494" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-74" value="如何接收任意的其他类型， 肯定得用template" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="1355" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-75" value="能让一个类型&amp;nbsp; 指向 其他任意的类型？" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="1400" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-76" value="Any类" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="1438" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-78" value="里有个Base*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="1438" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-80" value="Derive派生类用模板，然后把数据类型T包装在里面" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2300" y="1400" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VawQS5tZA4y5lR53ruD-81" value="Derive&amp;nbsp; : public Base" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1970" y="1478" width="130" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
