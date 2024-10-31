@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.2">
   <diagram name="第 1 页" id="_wXFGWpD91kYmUnJC7zX">
-    <mxGraphModel dx="611" dy="331" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="722" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -115,35 +115,31 @@
         <mxCell id="DcoFs-CMMb-lvAC_AcAE-48" value="负责创建Client实例，给每个Client分配一个server地址，参数输入后，每个Client开始运行" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="930" y="1168" width="500" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DcoFs-CMMb-lvAC_AcAE-64" value="Client" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1580" y="770" width="160" height="154" as="geometry" />
+        <mxCell id="DcoFs-CMMb-lvAC_AcAE-83" value="&lt;b&gt;Client&lt;/b&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="770" width="200" height="260" as="geometry">
+            <mxRectangle x="795" y="30" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="DcoFs-CMMb-lvAC_AcAE-65" value="queueMutex" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-64">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="DcoFs-CMMb-lvAC_AcAE-84" value="&lt;span style=&quot;text-align: center;&quot;&gt;queueMutex&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-83">
+          <mxGeometry y="26" width="200" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="DcoFs-CMMb-lvAC_AcAE-66" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-64">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        <mxCell id="DcoFs-CMMb-lvAC_AcAE-85" value="&lt;span style=&quot;text-align: center;&quot;&gt;RecordMutex&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-83">
+          <mxGeometry y="52" width="200" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="DcoFs-CMMb-lvAC_AcAE-67" value="RecordMutex" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-64">
-          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        <mxCell id="DcoFs-CMMb-lvAC_AcAE-86" value="&lt;span style=&quot;text-align: center;&quot;&gt;globalNodeQueue&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-83">
+          <mxGeometry y="78" width="200" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="DcoFs-CMMb-lvAC_AcAE-77" value="globalNodeQueue" style="html=1;whiteSpace=wrap;fillColor=none;align=center;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-64">
-          <mxGeometry y="86" width="160" height="34" as="geometry" />
+        <mxCell id="DcoFs-CMMb-lvAC_AcAE-87" value="&lt;span style=&quot;text-align: center;&quot;&gt;globalTagIdRecordQueue&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-83">
+          <mxGeometry y="104" width="200" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="DcoFs-CMMb-lvAC_AcAE-78" value="globalTagIdRecordQueue" style="html=1;whiteSpace=wrap;fillColor=none;align=center;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-64">
-          <mxGeometry y="120" width="160" height="34" as="geometry" />
+        <mxCell id="DcoFs-CMMb-lvAC_AcAE-94" value="+&amp;nbsp;modify_tag() -&amp;gt; None" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-83">
+          <mxGeometry y="130" width="200" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="DcoFs-CMMb-lvAC_AcAE-79" value="Classname" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1840" y="796" width="140" height="104" as="geometry" />
-        </mxCell>
-        <mxCell id="DcoFs-CMMb-lvAC_AcAE-80" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-79">
-          <mxGeometry y="26" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="DcoFs-CMMb-lvAC_AcAE-81" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-79">
-          <mxGeometry y="52" width="140" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="DcoFs-CMMb-lvAC_AcAE-82" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="DcoFs-CMMb-lvAC_AcAE-79">
-          <mxGeometry y="78" width="140" height="26" as="geometry" />
+        <mxCell id="DcoFs-CMMb-lvAC_AcAE-100" value="" style="endArrow=none;html=1;rounded=0;entryX=0.998;entryY=0.051;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.001;exitY=-0.049;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="DcoFs-CMMb-lvAC_AcAE-83" source="DcoFs-CMMb-lvAC_AcAE-94" target="DcoFs-CMMb-lvAC_AcAE-94">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-0.4199999999998454" y="183.22000000000025" as="sourcePoint" />
+            <mxPoint x="419.5799999999999" y="184.67599999999993" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
