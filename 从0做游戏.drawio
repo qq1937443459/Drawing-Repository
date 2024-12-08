@@ -1,9 +1,114 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="24.7.8">
   <diagram name="第 1 页" id="HRtujV3awLya84jrlpiD">
-    <mxGraphModel>
+    <mxGraphModel dx="1311" dy="694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-2" value="Client" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1265" y="568" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-4" value="登录" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="538" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-5" value="发送包为" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1352" y="613" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-6" value="&lt;div style=&quot;color: #abb2bf;background-color: #282c34;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #e06c75;&quot;&gt;lstPackInfo&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #56b6c2;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; [&lt;/span&gt;&lt;span style=&quot;color: #d19a66;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #d19a66;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;sAccount&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;sPwd&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;]&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="610" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-7" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Server&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="670" y="765" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-8" value="应该有个循环始终看着套接字的数据？" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1192" y="880" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-9" value="Clink" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="994" width="380" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-10" value="Recv() 一直在循环接收数据，解包,最后调用本类的OnCommand" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Q8L7rJfE8uZFokITUr_p-9">
+          <mxGeometry y="26" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Q8L7rJfE8uZFokITUr_p-9">
+          <mxGeometry y="52" width="380" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-12" value="run() 调用recv 只要连接在，就一直循环，初始化的时候会调用" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Q8L7rJfE8uZFokITUr_p-9">
+          <mxGeometry y="60" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-35" value="OnCommand(lstPackData)把自己的实例传给oManager" style="html=1;whiteSpace=wrap;" vertex="1" parent="Q8L7rJfE8uZFokITUr_p-9">
+          <mxGeometry y="86" width="380" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-47" value="UnpackHead()解包，读取第一个元素，并弹出" style="html=1;whiteSpace=wrap;" vertex="1" parent="Q8L7rJfE8uZFokITUr_p-9">
+          <mxGeometry y="136" width="380" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-13" value="CSocketManger" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="960" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-30" value="InitManger()" style="html=1;whiteSpace=wrap;" vertex="1" parent="Q8L7rJfE8uZFokITUr_p-13">
+          <mxGeometry y="26" width="160" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-14" value="start()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Q8L7rJfE8uZFokITUr_p-13">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Q8L7rJfE8uZFokITUr_p-13">
+          <mxGeometry y="86" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-16" value="NewItem()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Q8L7rJfE8uZFokITUr_p-13">
+          <mxGeometry y="94" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q8L7rJfE8uZFokITUr_p-16" target="Q8L7rJfE8uZFokITUr_p-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1420" y="1020" as="sourcePoint" />
+            <mxPoint x="1470" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-32" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;初始化&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="570" y="855" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-33" value="&lt;div style=&quot;color: #abb2bf;background-color: #282c34;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;InitModule&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;():&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;InitLogDir&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;objmanager&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Init&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;clientsocket&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Init&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;timecontrol&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Init&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;commandctrl&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Init&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;mutexlock&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Init&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;dbctrl&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Init&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;mapobj&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Init&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="820" width="240" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-34" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="Q8L7rJfE8uZFokITUr_p-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="960" y="900" as="sourcePoint" />
+            <mxPoint x="1080" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-36" value="oManager&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="1054" width="270" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-40" value="OnCommand(oLink)" style="html=1;whiteSpace=wrap;" vertex="1" parent="Q8L7rJfE8uZFokITUr_p-36">
+          <mxGeometry y="26" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q8L7rJfE8uZFokITUr_p-35" target="Q8L7rJfE8uZFokITUr_p-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-42" value="对oLink读取，调用uppackhead，读取Clink中的数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2560" y="1100" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-43" value="&lt;div style=&quot;color: #abb2bf;background-color: #282c34;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #e06c75;&quot;&gt;lstPackInfo&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #56b6c2;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; [&lt;/span&gt;&lt;span style=&quot;color: #d19a66;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #d19a66;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;sAccount&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color: #e06c75;font-style: italic;&quot;&gt;sPwd&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;]&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2390" y="970" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-45" value="oLink是一个CLink实例" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2495" y="1040" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-48" value="&lt;div style=&quot;color: #abb2bf;background-color: #282c34;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 16px;line-height: 22px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #c678dd;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;StartGame&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;():&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;pubdefines&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;FormatPrint&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #98c379;&quot;&gt;&quot;启动服务器&quot;&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;LoadServerConsole&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #e5c07b;&quot;&gt;clientsocket&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: #61afef;&quot;&gt;Start&lt;/span&gt;&lt;span style=&quot;color: #abb2bf;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1070" width="380" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-50" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Q8L7rJfE8uZFokITUr_p-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1080" y="1140" as="sourcePoint" />
+            <mxPoint x="1210" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-51" value="clientsocket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="930" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-52" value="调用commandctrl代理，进而调用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="1130" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q8L7rJfE8uZFokITUr_p-53" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;start()&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1090" width="80" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
